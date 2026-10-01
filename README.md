@@ -1,7 +1,8 @@
-# Axis Bank BIU — Collections Prioritization Engine
+# Retail Collections Optimizer
 
-> **Flagship project for Axis Bank Business Intelligence Unit (Analytics / Data Science)**  
-> Retail loan portfolio · Home Credit Default Risk dataset · End-to-end from raw SQL to executive dashboard
+> End-to-end collections prioritization engine for a retail loan portfolio  
+> SQL feature store · WOE scorecard · XGBoost · PD × EAD × LGD policy · Excel scenario tool · Power BI dashboard  
+> Built on the **[Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk)** dataset
 
 ---
 
@@ -70,8 +71,8 @@ axis-biu-collections/
 
 ```bash
 # 1. Clone
-git clone https://github.com/ujjwal77771/axis-biu-collections.git
-cd axis-biu-collections
+git clone https://github.com/ujjwal77771/retail-collections-optimizer.git
+cd retail-collections-optimizer
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -150,7 +151,7 @@ Stage 7  →  Power BI Dashboard + Executive Summary
 
 ## 🏦 Business Context
 
-**Role target:** Axis Bank BIU (Business Intelligence Unit) — Analytics / Data Science  
+**Role target:** Banking Business Intelligence Unit (BIU) — Analytics / Data Science  
 **JD alignment:** Predictive scoring · Portfolio analysis · Profitability modelling · Dashboards · Storytelling
 
 ---
