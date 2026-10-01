@@ -247,11 +247,17 @@ def main():
     # If baseline probabilities are available, plot them too
     if os.path.exists(SC_PKL):
         try:
-            bp  = sc_artifacts["binning_process"]
+            bp  = sc_artifacts["binners"]
             lr  = sc_artifacts["logistic_regression"]
             sel = sc_artifacts["selected_features"]
             sel = [c for c in sel if c in X_test.columns]
-            X_woe = bp.transform(X_test[sel], metric="woe")
+            X_woe = pd.DataFrame(index=X_test.index)
+            for f in sel:
+                if f in bp:
+                    wv = bp[f].transform(X_test[f].values, metric="woe")
+                    X_woe[f] = np.where(np.isfinite(wv), wv, 0.0)
+                else:
+                    X_woe[f] = 0.0
             y_prob_lr = lr.predict_proba(X_woe)[:, 1]
             lift_lr   = lift_curve(y_test.values, y_prob_lr)
             ax.plot(lift_lr["pct_pop"] * 100, lift_lr["cum_bad_rate"] * 100,

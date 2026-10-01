@@ -232,9 +232,10 @@ def main():
                 for col in [c for c in feat_cols if "l6m" in c or "trend" in c]:
                     X_sim_test[col] = 0
 
-        # Predict on window-truncated data
-        feat_avail = [c for c in feat_cols if c in X_sim_test.columns]
-        y_prob_sim = ew_model.predict_proba(X_sim_test[feat_avail].fillna(0))[:, 1]
+        # Align to exact feature list the model was trained on
+        model_feats = ew_model.get_booster().feature_names
+        X_pred = X_sim_test.reindex(columns=model_feats, fill_value=0).fillna(0)
+        y_prob_sim = ew_model.predict_proba(X_pred)[:, 1]
         y_flag     = (y_prob_sim >= THRESHOLD).astype(int)
 
         true_defaults  = (y_test == 1)
