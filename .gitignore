@@ -1,0 +1,47 @@
+# ── Data ──────────────────────────────────────────────────────────────────────
+# Raw CSVs — too large for git, download from Kaggle
+data/raw/
+data/raw/*.csv
+data/raw/*.zip
+
+# Generated outputs (charts, models, artifacts)
+outputs/*.csv
+outputs/*.png
+outputs/*.pkl
+outputs/*.duckdb
+outputs/*.xlsx
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+*.key
+kaggle.json
+
+# ── DuckDB temp files ─────────────────────────────────────────────────────────
+*.duckdb.wal
