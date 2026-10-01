@@ -1,6 +1,6 @@
 """
 =============================================================================
-AXIS BANK BIU — Collections Prioritization Project
+Collections Prioritization Project
 Stage 3: XGBoost Challenger + SHAP Explainability
 =============================================================================
 What this stage does (plain English):

@@ -1,6 +1,6 @@
 """
 =============================================================================
-AXIS BANK BIU — Collections Prioritization Project
+Collections Prioritization Project
 Stage 4: Early Warning Layer
 =============================================================================
 What this stage does (plain English):

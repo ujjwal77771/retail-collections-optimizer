@@ -1,6 +1,6 @@
 """
 =============================================================================
-AXIS BANK BIU — Collections Prioritization Project
+Collections Prioritization Project
 Stage 0: Data Download Helper
 =============================================================================
 INSTRUCTIONS:

@@ -1,5 +1,5 @@
 -- =============================================================================
--- AXIS BANK BIU — Collections Prioritization Project
+-- Collections Prioritization Project
 -- Stage 1: SQL Feature Engineering (DuckDB)
 -- =============================================================================
 -- CONVENTIONS

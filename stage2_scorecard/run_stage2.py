@@ -1,6 +1,6 @@
 """
 =============================================================================
-AXIS BANK BIU — Collections Prioritization Project
+Collections Prioritization Project
 Stage 2: Baseline Scorecard  (WOE / IV + Logistic Regression)
 =============================================================================
 Fixed for optbinning >= 0.19: uses individual OptimalBinning objects

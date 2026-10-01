@@ -1,6 +1,6 @@
 """
 =============================================================================
-AXIS BANK BIU — Collections Prioritization Project
+Collections Prioritization Project
 Stage 1: Feature Build Runner
 =============================================================================
 This script:

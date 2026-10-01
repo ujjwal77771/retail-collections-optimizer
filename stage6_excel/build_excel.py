@@ -1,6 +1,6 @@
 """
 =============================================================================
-AXIS BANK BIU — Collections Prioritization Project
+Collections Prioritization Project
 Stage 6: Excel Scenario Tool  (Manager-Facing)
 =============================================================================
 What this stage does (plain English):

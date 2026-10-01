@@ -1,6 +1,6 @@
 """
 =============================================================================
-AXIS BANK BIU — Collections Prioritization Project
+Collections Prioritization Project
 Stage 5: Prioritization Policy  (PD × EAD × LGD × Contact Effectiveness)
 =============================================================================
 What this stage does (plain English):
